@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/book_flight_cab
+    username: root
+    password: Siddhant007@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  application:
+    name: book-my-flight
+
+
+  cache:
+    type: redis
+    redis:
+      cache-null-values: true
+      time-to-live: 60000
+
+
+
